@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos PMPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+</head>
+<body>
+    <div class="container">
+        <div id="login-section">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="E-mail" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </div>
+
+        <div id="register-section" class="hidden">
+            <h1>Cadastro</h1>
+            <form id="register-form">
+                <input type="text" id="reg-name" placeholder="Nome" required>
+                <input type="email" id="reg-email" placeholder="E-mail" required>
+                <input type="password" id="reg-password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p><a href="#" id="show-login">Voltar ao Login</a></p>
+        </div>
+
+        <div id="dashboard-section" class="hidden">
+            <h2>Meus Estudos 📚</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Nova matéria..." required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="task-list"></ul>
+            <button id="logout-btn" style="background:#dc3545; margin-top:20px;">Sair</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
